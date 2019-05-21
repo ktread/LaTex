@@ -1,0 +1,66 @@
+
+\documentclass[fleqn, twocolumn, 10pt]{article}	
+
+
+\usepackage[english]{babel}	
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage[hang, small,labelfont=bf,up,textfont=up,up, list=no]{caption}
+\usepackage{subfig}	
+\linespread{3}
+\usepackage{amsmath}
+\usepackage[margin=0.3in]{geometry}
+\usepackage{microtype}
+ \usepackage{vwcol}  
+
+%%% Begin document -----------------------------------------------------------------
+\begin{document}
+\begin{vwcol}[widths={0.62,0.6,0.6}]
+ $$\bar{x}_{w} = \frac{ \sum\limits_{i=1}^n w_i x_i}{\sum\limits_{i=1}^n w_i}$$
+$$\sigma^2 = \frac{\sum (x - \mu)^2}{N}$$
+$$s^2 = \frac{\sum (x - \bar{x})^2}{n - 1}$$
+$${P(AorB)}=P(A)+P(B)$$
+$${P(AorB)=P(A)+P(B)-P(A\&B)}$$
+$${P(A\&B) = P(A)\cdot P(B)}$$
+$${P(A&B)} = \frac{P(A)}{P(B \vert A)}$$
+$$P(A_{i}\vert B) = \frac{P(A and B)}{P(A)}$$
+$${}_nP_{r} = \frac{n!}{(n - r)!}$$
+$${}_nP(same)_{r} = \frac{n!}{(r_1!r_2!...r_n!)}$$
+$${}_nC_{r} = \frac{n!}{r!(n - r)!}$$
+$$\mu = \Sigma \left[ xP(x) \right]$$
+$$\sigma^{2} = \Sigma\left[ x^{2}P(x) \right]-\mu^2$$
+$$P(x) = \frac{n!}{(n-X)!X!}p^X q^n-x$$
+$$\mu=np$$
+$$\sigma^2 = npq$$
+$$z_{popmean}\frac{\bar{x}-\mu}{(\frac{\sigma}{\sqrt{n}})}$$
+$$t_{popmean} = \frac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}}$$
+$$z_{onevalue} = \frac{x - \mu}{\sigma}$$
+$$z_{prop} = \frac{\hat{p}-p}{\sqrt{\frac{pq}{n}}} $$
+$$z_{2means} = \frac{\bar{x}_{1} - \bar{x}_{2}}{\sqrt{\frac{\sigma^{2}_{1}}{{n}_{1}}+\frac{{\sigma}^{2}_{2}}{n_{2}}}}$$
+$$t_{2means[i]} = \frac{\bar{x}_{1} - \bar{x}_{2}}{\sqrt{\frac{s^{2}_{1}}{{n}_{1}}+\frac{{s}^{2}_{2}}{n_{2}}}}$$
+$$t_{2means[d]} = \frac{\bar{D} -\mu_D}{\frac{s_D}{\sqrt{n}}}$$
+$$\bar{D}= \frac{\sum D}{n}$$
+$$ S_D = \sqrt{\frac{n\sum D^2 - (\sum D)^2}{n(n-1)}}$$
+$$z_{2prop} = \frac{\hat{p_{1}} - \hat{p_{2}}}{\sqrt{{\bar{p}\bar{q}}(\frac{1}{n_1})(\frac{1}{n_2})}}$$
+$$t_{regression}=r\sqrt{\frac{n-2}{1-r^2}}$$
+$$\bar{x} \pm z_\alpha(\frac{\sigma}{\sqrt{n}})$$
+$$\bar{x} \pm t_\alpha\cdot(\frac{s}{\sqrt{n}})$$
+$$\hat{p} \pm z_\alpha\cdot \sqrt{\frac{\hat{p}\hat{q}}{n}}$$
+$$ z_{2means} = (\bar{X_1}-\bar{X_2})\pm z_{\nicefrac{\alpha}{/2}}\cdot {\sqrt{\frac{\sigma^{2}_{1}}{{n}_{1}}+\frac{{\sigma}^{2}_{2}}{n_{2}}}}$$
+$$ t_{2means[i]} = (\bar{X_1-\bar{X_2}}) \pm z_{\nicefrac{\alpha}{/2}}\cdot {\sqrt{\frac{s^{2}_{1}}{{n}_{1}}+\frac{{s}^{2}_{2}}{n_{2}}}}$$
+$$\bar{D} \pm t_\alpha\cdot(\frac{s_D}{\sqrt{n}})$$
+$$(\hat{p_1}-\hat{p_2})\pm z_\alpha\cdot\sqrt{(\frac{\hat{p_1}\hat{q_1}}{n_1})+(\frac{\hat{p_2}\hat{q_2}}{n_2})} $$
+%%OTHER H TESTING
+$$ n_{popmean}=(\frac{z_{\alpha}\cdot\sigma}{E})^2$$
+$$ n_{popprop}= \hat{p}\cdot\hat{q}(\frac{z_\alpha}{E})^2 $$
+$$\hat{p} = \frac{X}{n}$$
+$$\bar{p} = \frac{X_1 + X_2}{n_1 + n_2}$$
+%%CORRELATION
+$$r=\frac{n(\sum xy)-(\sum x)(\sum y)}{\sqrt{[n(\sum x^2)-(\sum x)^2][n(\sum y^2)-(\sum y)^2]}}$$
+$$a=\frac{(\sum y)(\sum x^2)-(\sum x)(\sum xy)}{n(\sum x^2)-(\sum x)^2}$$
+$$b= \frac{n(\sum xy)-(\sum x)(\sum y)}{n(\sum x^2)-(\sum x)^2}$$
+$$y=a+bx$$
+$$\chi^2 = \sum (\frac{(O-E)^2}{E})$$
+$$1-tail: .10\pm1.28; .05\pm 1.65; .01\pm 2.30; .02\pm 2.05$$
+$$2-tail: .10\pm1.65; .05\pm 1.96; .01\pm 2.58; .02\pm 2.33$$
+\end{vwcol}
+\end{document}
